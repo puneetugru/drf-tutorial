@@ -12,4 +12,5 @@ urlpatterns = [
         r'^products/(?P<product_id>[0-9]+)/reviews/(?P<review_id>[0-9]+)/$',
         views.ReviewDetail.as_view()
     ),
+    url(r'^social_sign_up/$', views.SocialSignUp.as_view(), name="social_sign_up"),
 ]
